@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const[theme, setTheme] = useState('light');
@@ -28,13 +29,13 @@ const NavBar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal font-bold px-1">
           <li>
-            <a>Home</a>
+            <Link to={'/'}>Home</Link>
           </li>
           <li>
-            <a>Blogs</a>
+            <Link to={'/Blogs'}>Blogs</Link>
           </li>
           <li>
-            <a>Bookmarks</a>
+            <Link to={"/BookMarks"}>Bookmarks</Link>
           </li>
         </ul>
         <label className="grid cursor-pointer place-items-center">
