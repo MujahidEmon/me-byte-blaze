@@ -12,7 +12,9 @@ const HomePage = () => {
             <div className="min-h-[calc(100vh-136px)]">
                 <Outlet></Outlet>
             </div>
-            <Footer></Footer>
+            <div className="h-[64px]">
+                <Footer></Footer>
+            </div>
         </div>
     );
 };
